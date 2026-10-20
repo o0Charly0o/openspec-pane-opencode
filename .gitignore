@@ -1,0 +1,6 @@
+node_modules/
+*.tsbuildinfo
+
+# OpenSpec and OpenCode files from local testing
+openspec/
+.opencode/

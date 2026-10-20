@@ -1,0 +1,40 @@
+{
+  "name": "opencode-openspec-pane",
+  "version": "0.1.0",
+  "description": "Side pane with the tasks of the active OpenSpec changes, refreshed as work goes on; opens by itself at session start when there are active changes. Command: /openspec.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "o0Charly0o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/o0Charly0o/openspec-pane-opencode"
+  },
+  "exports": {
+    ".": "./src/plugin.ts",
+    "./tui": "./src/tui.tsx"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.1.0"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.6.6",
+    "@opentui/solid": ">=0.6.6",
+    "solid-js": ">=1.9.0"
+  },
+  "devDependencies": {
+    "@opencode/theme": "^2.1.0",
+    "@opentui/core": "^0.6.6",
+    "@opentui/solid": "^0.6.6",
+    "solid-js": "^1.9.0",
+    "typescript": "^5.9.0"
+  }
+}
